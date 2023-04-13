@@ -9,33 +9,36 @@
 </head>
 <body>
   <main>
-    <div class="calculadora">
+    <section class="calculadora">
       <div class="tela">
+        <p class="valor_tela"></p>
       </div>
       
       <div class="teclado">
-        <button class="CE">CE</button>
-        <button>C</button>
-        <button><img src="./assets/images/Percent.svg" alt=""></button>
-        <button class="operador"><img src="./assets/images/divide.svg" alt=""></button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="operador"><img src="./assets/images/X.svg" alt=""></button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="operador"><img src="./assets/images/Minus.svg" alt=""></button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="operador"><img src="./assets/images/Plus.svg" alt=""></button>
-        <button><img src="./assets/images/PlusMinus.svg" alt=""></button>
-        <button>0</button>
-        <button>,</button>
-        <button class="igual"><img src="./assets/images/Equals.svg" alt=""></button>
+        <button data-operador="DelAtual">CE</button>
+        <button data-operador="del">C</button>
+        <button data-operador="%"><img src="./assets/images/Percent.svg"></button>
+        <button data-operador="/" class="operador"><img src="./assets/images/divide.svg"></button>
+        <button data-numero>7</button>
+        <button data-numero>8</button>
+        <button data-numero>9</button>
+        <button data-operador="x" class="operador"><img src="./assets/images/X.svg"></button>
+        <button data-numero>4</button>
+        <button data-numero>5</button>
+        <button data-numero>6</button>
+        <button data-operador="-" class="operador"><img src="./assets/images/Minus.svg"></button>
+        <button data-numero>1</button>
+        <button data-numero>2</button>
+        <button data-numero>3</button>
+        <button data-operador="+" class="operador"><img src="./assets/images/Plus.svg"></button>
+        <button id="btn-plusminus"><img src="./assets/images/PlusMinus.svg"></button>
+        <button data-numero>0</button>
+        <button data-virgula>,</button>
+        <button data-operador="="><img src="./assets/images/Equals.svg"></button>
       </div>
-    </div>
+    </section>
   </main>
+
+  <script src="./assets/script/main.js"></script>
 </body>
 </html>

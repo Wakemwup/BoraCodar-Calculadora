@@ -65,12 +65,13 @@ body {
       background: colors.$operador;
     }
 
-    .igual {
+    #btn-equal {
       background: colors.$igual;
       font-size: 3.6rem;
+      line-height: 43px;
     }
 
-    .CE {
+    #CE {
       color: colors.$CE;
     }
   }
